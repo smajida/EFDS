@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( detect_fire )
+find_package( OpenCV REQUIRED )
+add_executable( detect_fire efds.cpp Queue.cpp)
+target_link_libraries( detect_fire ${OpenCV_LIBS} )
